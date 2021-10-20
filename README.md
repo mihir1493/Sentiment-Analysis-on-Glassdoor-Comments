@@ -23,7 +23,7 @@ Extracting the following elements for each glassdoor review posted:
 *	Date Posted
 *	Job Title - Position held at the company
 
-## Web Scraping Process [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/spiders/glassdoor_spider.py)
+## Web Scraping Process:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/spiders/glassdoor_spider.py)
 
 Scrapy is one the most powerful web scraping scalable framework in python. 
 
@@ -37,7 +37,7 @@ Scrapy is one the most powerful web scraping scalable framework in python.
 8.	Exporting the scraped data into a json format to perform sentiment analysis
 
 
-## Data Cleaning [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor_Data_Cleaning.ipynb)
+## Data Cleaning: [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor_Data_Cleaning.ipynb)
 Data cleaning is an important step in any analysis project. For this particular case the data extracted from webscraping the glassdoor page was nested with the key being the feature and the value being a list of 10 elements for single page of the website
 
 *	In order to perform analysis we needed to create a dataframe without the nesting where each element is represented across a single row containing the value for each entity
