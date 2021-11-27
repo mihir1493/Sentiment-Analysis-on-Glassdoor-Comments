@@ -1,6 +1,8 @@
 # Sentiment-Analysis-on-Glassdoor-Comments
 Webscraping Glassdoor Comments and Conducting Sentiment Analysis 
 
+Project Final Link Notebook: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor%20NLP%20Project%20.ipynb
+
 # Project Summary
 The Internet allows users to have a space where they can share, express and receive opinions. It is used by almost everyone such as employees, recruiters, small and medium business owners and all kinds of various organizations. In recent times, with the launch of platforms like LinkedIn, Glassdoor or Indeed, employees have opted to review and anonymously give feedback about their organizations. Our team plans on gathering and analyzing these feedbacks. And then draw a comparison between different organizations in the US job market. 
 
