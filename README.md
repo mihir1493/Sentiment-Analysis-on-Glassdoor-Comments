@@ -41,7 +41,7 @@ Extracting the following elements for each glassdoor review posted:
 *	Date Posted
 *	Job Title - Position held at the company
 
-## Web Scraping File:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/glassdoor/spiders/glassdoor_spider.py)
+## Web Scraping File: [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/glassdoor/spiders/glassdoor_spider.py)
 
 Scrapy is one the most powerful web scraping scalable framework in python. 
 
@@ -83,11 +83,15 @@ Scrapy is one the most powerful web scraping scalable framework in python.
 Data cleaning is an important step in any analysis project. For this particular case the data extracted from webscraping the glassdoor page was nested with the key being the feature and the value being a list of 10 elements for single page of the website
 
 *	In order to perform analysis we needed to create a dataframe without the nesting where each element is represented across a single row containing the value for each entity
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture6.jpg)
 *	To fix this issue we use the pandas >= 0.25, explode() function to transform each list in cell into an independent row across all column
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture7.jpg)
 *	The next step in preprocessing our dataframe involved splitting the date_position column that contained the date and the job title of the individual. To create new columns by splitting the date_position column we use the split method on the column 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture8.jpg)
 *	After splitting the date_position column, the date column still exists as an object so we need to convert it into date type to perform further analysis. To do this, we use the pd.to_datetime function on the column date
 *	Removing the index column from the dataframe using df.drop function in pandas
 *	Exporting the dataframe as csv – cleaned_data.csv
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture9.jpg)
 
 
 
