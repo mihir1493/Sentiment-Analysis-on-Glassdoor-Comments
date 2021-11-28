@@ -1,14 +1,24 @@
 # Sentiment-Analysis-on-Glassdoor-Comments
-Webscraping Glassdoor Comments and Conducting Sentiment Analysis 
+Webscraping Glassdoor Comments and Conducting Exploratory Data Analysis, Sentiment Analysis, Topic Modelling on the employee reviews. 
 
-Project Final Link Notebook: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor%20NLP%20Project%20.ipynb
+Final Project NLP Analysis Notebook for each company:
+**Walmart**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/walmart/Glassdoor%20NLP%20Project%20-%20Walmart.ipynb
+**Comcast**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/comcast/Glassdoor%20NLP%20Project%20-%20Comcast.ipynb
+**Wells Fargo**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/wells%20fargo/Glassdoor%20NLP%20Project%20-%20Wells%20Fargo.ipynb
+**Fedex**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/fedex/Glassdoor%20NLP%20Project%20-%20Fedex.ipynb
 
 # Project Summary
 The Internet allows users to have a space where they can share, express and receive opinions. It is used by almost everyone such as employees, recruiters, small and medium business owners and all kinds of various organizations. In recent times, with the launch of platforms like LinkedIn, Glassdoor or Indeed, employees have opted to review and anonymously give feedback about their organizations. Our team plans on gathering and analyzing these feedbacks. And then draw a comparison between different organizations in the US job market. 
 
 Reading through scores of reviews on job platforms can be a real taxing effort while searching for a job. One must closely examine each and every review to try and form an opinion about the company. Moreover, reading thousand and thousands of comments posted for each company, potential employee is often left with a biased opinion developed over reading initial comments that he/she is exposed to. 
   
-Through this project we hope to deliver a deeper insight into the company through the eyes of its current and former employee to provide a transparent insight into the company. Though sentiment analysis on the comments obtained from the portal we wish to glean an understanding of key topics such as benefits, management, culture, work-life balance, environment, diversity & inclusion
+Through this project we hope to deliver a deeper insight into the company through the eyes of its current and former employee to provide a transparent insight into the company. Though sentiment analysis on the comments obtained from the portal we wish to glean an understanding of key topics such as benefits, management, culture, work-life balance, environment, diversity & inclusion.
+
+Companies selected for analysis:
+1.	FedEx (Logistic/ Courier)
+2.	Walmart (E-commerce/ Retail)
+3.	Wells Fargo (Finance/Banking/Retirement Solutions)
+4.	Comcast (Broadcasting)
 
 ### Code and Resources Used 
 **Python Version:** 3.8  
@@ -25,7 +35,7 @@ Extracting the following elements for each glassdoor review posted:
 *	Date Posted
 *	Job Title - Position held at the company
 
-## Web Scraping Process:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/spiders/glassdoor_spider.py)
+## Web Scraping File:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/spiders/glassdoor_spider.py)
 
 Scrapy is one the most powerful web scraping scalable framework in python. 
 
@@ -37,6 +47,20 @@ Scrapy is one the most powerful web scraping scalable framework in python.
 6.	Adding fake user agents to bypass restrictions using Scrapy-UserAgents Library – Rotating user agents tricks the glassdoor website who will flag the IP if the request limit reaches a certain threshold. 
 7.	Using pagination to cycle through the website pages to extract the features for each review posted on a single page. 
 8.	Exporting the scraped data into a json format to perform sentiment analysis
+
+## Web Scraping Steps:
+*	Installing the requirements using requirements.txt (pip install)
+*	Create a scrapy project called Glassdoor – generate a scrapy default template
+*	Creating a spider to crawl the Glassdoor company url link
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture1.jpg)
+*	Specifying items to extract using css selectors
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture2.jpg)
+*	Adding fake user agents to bypass restrictions using Scrapy-User-Agents Library – Rotating user agents tricks the glassdoor website who will flag the IP if the request limit reaches a certain threshold.
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture3.jpg)
+*	Using pagination to cycle through the website pages to extract the features for each review posted on a single page.
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture4.jpg)
+*	Exporting the scraped data into a json format to perform sentiment analysis
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture5.jpg)
 
 
 ## Data Cleaning: [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor_Data_Cleaning.ipynb)
