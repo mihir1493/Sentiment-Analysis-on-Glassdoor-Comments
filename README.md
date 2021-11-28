@@ -86,62 +86,80 @@ Data cleaning is an important step in any analysis project. For this particular 
 
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture6.jpg)
 *	To fix this issue we use the pandas >= 0.25, explode() function to transform each list in cell into an independent row across all column
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture7.jpg)
-*	The next step in preprocessing our dataframe involved splitting the date_position column that contained the date and the job title of the individual. To create new columns by splitting the date_position column we use the split method on the column 
+*	The next step in preprocessing our dataframe involved splitting the date_position column that contained the date and the job title of the individual. To create new columns by splitting the date_position column we use the split method on the column
+ 
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture8.jpg)
 *	After splitting the date_position column, the date column still exists as an object so we need to convert it into date type to perform further analysis. To do this, we use the pd.to_datetime function on the column date
 *	Removing the index column from the dataframe using df.drop function in pandas
 *	Exporting the dataframe as csv – cleaned_data.csv
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture9.jpg)
 
-## Data Analysis: [Click Here]()
+## Data Analysis: [Click Here](https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/wells%20fargo/Glassdoor%20NLP%20Project%20-%20Wells%20Fargo.ipynb#topic=1&lambda=0.44&term=)
 
 * Plotting Distribution for Review Length vs Number of review
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a1.JPG)
 
 * Plotting review rating frequency count
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a2.PNG)
+
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a2.png)
 
 * Employee Type Vs Rating 
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a3.PNG)
+
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a3.png)
 
 * Review Count Timeline
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a4.PNG)
 
-* Review Count by Job Title 
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a5.PNG)
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a4.png)
+
+* Review Count by Job Title
+ 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a5.png)
 
 * Top Review Counts by Job Title
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a6.JPG)
 
 * Word Cloud for Pros in all reviews combined
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a7.JPG)
 
 * Word Cloud for Cons in all reviews combined
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a8.JPG)
 
 * Review Length for each rating
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a9.JPG)
 
 * Box Plot for review length 
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a10.JPG)
 
 * Performing Topic Modelling with 5 specified topics
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a11.JPG)
 
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a12.JPG)
 
 * Sentiment Analysis with emotion classification
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a13.PNG)
+
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a13.png)
 
 * Bi-Grams 
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a14.JPG)
 
 * Tri-Grams
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a15.JPG)
 
 * Name Entity Recognition using Spacy
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a16.PNG)
+
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a16.png)
 
 
  
