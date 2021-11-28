@@ -83,6 +83,7 @@ Scrapy is one the most powerful web scraping scalable framework in python.
 Data cleaning is an important step in any analysis project. For this particular case the data extracted from webscraping the glassdoor page was nested with the key being the feature and the value being a list of 10 elements for single page of the website
 
 *	In order to perform analysis we needed to create a dataframe without the nesting where each element is represented across a single row containing the value for each entity
+
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture6.jpg)
 *	To fix this issue we use the pandas >= 0.25, explode() function to transform each list in cell into an independent row across all column
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture7.jpg)
@@ -94,7 +95,68 @@ Data cleaning is an important step in any analysis project. For this particular 
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture9.jpg)
 
 ## Data Analysis: [Click Here]()
-{% include_relative wells_time.html}
+
+* Plotting Distribution for Review Length vs Number of review
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a1.JPG)
+
+* Plotting review rating frequency count
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a2.PNG)
+
+* Employee Type Vs Rating 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a3.PNG)
+
+* Review Count Timeline
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a4.PNG)
+
+* Review Count by Job Title 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a5.PNG)
+
+* Top Review Counts by Job Title
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a6.JPG)
+
+* Word Cloud for Pros in all reviews combined
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a7.JPG)
+
+* Word Cloud for Cons in all reviews combined
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a8.JPG)
+
+* Review Length for each rating
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a9.JPG)
+
+* Box Plot for review length 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a10.JPG)
+
+* Performing Topic Modelling with 5 specified topics
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a11.JPG)
+
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a12.JPG)
+
+* Sentiment Analysis with emotion classification
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a13.PNG)
+
+* Bi-Grams 
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a14.JPG)
+
+* Tri-Grams
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a15.JPG)
+
+* Name Entity Recognition using Spacy
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a16.PNG)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
