@@ -3,8 +3,11 @@ Webscraping Glassdoor Comments and Conducting Exploratory Data Analysis, Sentime
 
 Final Project NLP Analysis Notebook for each company:
 **Walmart**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/walmart/Glassdoor%20NLP%20Project%20-%20Walmart.ipynb
+
 **Comcast**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/comcast/Glassdoor%20NLP%20Project%20-%20Comcast.ipynb
+
 **Wells Fargo**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/wells%20fargo/Glassdoor%20NLP%20Project%20-%20Wells%20Fargo.ipynb
+
 **Fedex**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/fedex/Glassdoor%20NLP%20Project%20-%20Fedex.ipynb
 
 # Project Summary
