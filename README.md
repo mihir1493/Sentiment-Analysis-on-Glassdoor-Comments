@@ -2,6 +2,7 @@
 Webscraping Glassdoor Comments and Conducting Exploratory Data Analysis, Sentiment Analysis, Topic Modelling on the employee reviews. 
 
 Final Project NLP Analysis Notebook for each company:
+
 **Walmart**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/walmart/Glassdoor%20NLP%20Project%20-%20Walmart.ipynb
 
 **Comcast**: https://nbviewer.org/github/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/comcast/Glassdoor%20NLP%20Project%20-%20Comcast.ipynb
@@ -18,10 +19,12 @@ Reading through scores of reviews on job platforms can be a real taxing effort w
 Through this project we hope to deliver a deeper insight into the company through the eyes of its current and former employee to provide a transparent insight into the company. Though sentiment analysis on the comments obtained from the portal we wish to glean an understanding of key topics such as benefits, management, culture, work-life balance, environment, diversity & inclusion.
 
 Companies selected for analysis:
-1.	FedEx (Logistic/ Courier)
-2.	Walmart (E-commerce/ Retail)
-3.	Wells Fargo (Finance/Banking/Retirement Solutions)
-4.	Comcast (Broadcasting)
+| Sr.No | Company Name |     Data Types    | Number of Reviews |                Domain                |
+|:-----:|:------------:|:-----------------:|:-----------------:|:------------------------------------:|
+| 1     | Walmart      | Numeric & Textual |        9970       |          E-commerce/ Retail          |
+| 2     | Wells Fargo  | Numeric & Textual |       10000       | Finance/Banking/Retirement Solutions |
+| 3     | Comcast      | Numeric & Textual |       10000       |             Broadcasting             |
+| 4     | Fedex        | Numeric & Textual |        7053       |           Logistic/ Courier          |
 
 ### Code and Resources Used 
 **Python Version:** 3.8  
@@ -38,7 +41,7 @@ Extracting the following elements for each glassdoor review posted:
 *	Date Posted
 *	Job Title - Position held at the company
 
-## Web Scraping File:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/spiders/glassdoor_spider.py)
+## Web Scraping File:[Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/glassdoor/glassdoor/spiders/glassdoor_spider.py)
 
 Scrapy is one the most powerful web scraping scalable framework in python. 
 
@@ -65,6 +68,16 @@ Scrapy is one the most powerful web scraping scalable framework in python.
 *	Exporting the scraped data into a json format to perform sentiment analysis
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture5.jpg)
 
+## Data Dictionary: 
+| Index | Attribute Name |          Description         |  Data Type |         Source         |
+|:-----:|:--------------:|:----------------------------:|:----------:|:----------------------:|
+|   1   |     Rating     |  Company Rating Scale (0-5)  |   Object   | https://glassdoor.com/ |
+|   2   |  Employee Type |   Current/ Former Employee   |   Object   | https://glassdoor.com/ |
+|   3   |     Review     |            Review            |   Object   | https://glassdoor.com/ |
+|   4   |      Pros      |     Advantages/ Benefits     |   Object   | https://glassdoor.com/ |
+|   5   |      Cons      |      Disadvantages/ Cons     |   Object   | https://glassdoor.com/ |
+|   6   |      Date      |          Date Posted         | Datetime64 | https://glassdoor.com/ |
+|   7   |    Job Title   | Position held at the company |   Object   | https://glassdoor.com/ |
 
 ## Data Cleaning: [Click Here](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/Glassdoor_Data_Cleaning.ipynb)
 Data cleaning is an important step in any analysis project. For this particular case the data extracted from webscraping the glassdoor page was nested with the key being the feature and the value being a list of 10 elements for single page of the website
