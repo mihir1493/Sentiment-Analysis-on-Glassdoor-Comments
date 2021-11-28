@@ -125,11 +125,11 @@ Data cleaning is an important step in any analysis project. For this particular 
 
 * Word Cloud for Pros in all reviews combined
 
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a7.JPG)
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a7.png)
 
 * Word Cloud for Cons in all reviews combined
 
-![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a8.JPG)
+![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/a8.png)
 
 * Review Length for each rating
 
