@@ -93,6 +93,9 @@ Data cleaning is an important step in any analysis project. For this particular 
 *	Exporting the dataframe as csv – cleaned_data.csv
 ![alt text](https://github.com/mihir1493/Sentiment-Analysis-on-Glassdoor-Comments/blob/main/img%20src/Picture9.jpg)
 
+## Data Analysis: [Click Here]()
+{% include_relative wells_time.html}
+
 
 
 
